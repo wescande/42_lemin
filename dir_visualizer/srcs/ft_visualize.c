@@ -6,7 +6,7 @@
 /*   By: wescande <wescande@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/22 19:12:42 by wescande          #+#    #+#             */
-/*   Updated: 2017/02/24 14:17:53 by wescande         ###   ########.fr       */
+/*   Updated: 2017/03/14 17:11:41 by wescande         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ static int		import_image(t_visualize *vi)
 
 static int		create_win(t_visualize *vi, int max_x, int max_y)
 {
-	vi->mlxsize.x = 2300;
-	vi->mlxsize.y = 1200;
+	vi->mlxsize.x = 1800;
+	vi->mlxsize.y = 900;
 	vi->ratio.x = (vi->mlxsize.x - 100) / max_x;
 	vi->ratio.y = (vi->mlxsize.y - 150) / max_y;
 	vi->mlx = mlx_init();
